@@ -1,17 +1,15 @@
-# Rinat Ltd — Website (Polished)
+# Rinat Ltd — Tailwind landing
 
-This repo contains a small static site for Rinat Ltd (Rinat, electrician). I improved the design for better typography, spacing and responsive layout.
+Polished single-page Tailwind landing for Rinat Ltd.
 
-Files added/updated:
-- index.html (updated)
-- assets/styles.css (new)
-- .nojekyll (ensure GitHub Pages serves root files)
+Files:
+- index.html
+- assets/styles.css
+- .nojekyll
 
 Placeholders:
-- Phone: +44 7123 456789
-- Email: info@rinatltd.example
-- Address: 123 Example Street, Your Town, UK
+- Phone +44 7123 456789
+- Email info@rinatltd.example
 
 How to publish:
-- Push branch main (already used) and enable Pages in Settings → Pages → Branch: main, Folder: / (root).
-- Replace placeholders in index.html before sharing.
+- Files are pushed to branch main. Enable GitHub Pages in Settings → Pages and set source to main / (root).

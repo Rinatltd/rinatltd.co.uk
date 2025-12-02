@@ -1,98 +1,116 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Rinat Ltd — Electrician & Home Energy Magician</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <meta name="description" content="Rinat Ltd — Professional electrician. Installations, repairs, safety checks and energy-smart solutions.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rinat Ltd — Electrician</title>
+  <meta name="description" content="Rinat Ltd — Professional electrician. Installations, repairs, safety checks and energy-smart solutions." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small Tailwind config tweak */
+    @layer utilities {
+      .max-prose { max-width: 72rem; }
+    }
+  </style>
 </head>
-<body>
-  <header class="header">
-    <div class="wrap">
-      <a class="brand" href="/">
-        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+<body class="bg-gradient-to-b from-white to-slate-50 text-slate-900 antialiased">
+  <header class="bg-white/60 backdrop-blur sticky top-0 z-30 border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <svg class="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
           <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#FFD166"/><stop offset="1" stop-color="#FF7A59"/></linearGradient></defs>
-          <circle cx="32" cy="32" r="30" fill="url(#bg)" opacity="0.06"/>
+          <circle cx="32" cy="32" r="30" fill="#0f1724" opacity="0.04"/>
           <path d="M34 10c0 0-3 6 4 8-9 2-10 9-10 16l-6-1 8 22 0-14c2 2 6 3 10 2-2 6 4-10 4-10s6-12-4-19c-3-2-6-2-6-2z" fill="url(#g)"/>
         </svg>
-        <div class="brand-text">
-          <span class="company">Rinat Ltd</span>
-          <span class="tag">Electrician & Home Energy Magician</span>
+        <div>
+          <div class="text-lg font-semibold">Rinat Ltd</div>
+          <div class="text-sm text-slate-500">Electrician & Home Energy Magician</div>
         </div>
       </a>
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-600">
+        <a href="#services" class="hover:text-slate-900">Services</a>
+        <a href="#contact" class="hover:text-slate-900">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap main">
-    <section class="hero">
-      <div class="hero-left">
-        <h1>Reliable electrician. Practical energy savings. Local & insured.</h1>
-        <p class="lead">Hi — I’m Rinat. I install, repair and make homes safer and more energy-efficient. Clean installs, clear pricing, and a focus on safety and workmanship.</p>
-        <p class="actions">
-          <a class="btn primary" href="tel:+447123456789">Call +44 7123 456789</a>
-          <a class="btn" href="mailto:info@rinatltd.example">Email info@rinatltd.example</a>
-        </p>
-        <ul class="quick">
-          <li>Part P registered (placeholder)</li>
-          <li>Public liability insured</li>
-          <li>10+ years experience</li>
-        </ul>
-      </div>
-      <aside class="hero-right" id="contact">
-        <div class="card contact">
-          <h3>Get in touch</h3>
-          <p class="muted">Replace these placeholders with your real contact details in index.html</p>
-          <p><strong>Phone:</strong> <a href="tel:+447123456789">+44 7123 456789</a></p>
-          <p><strong>Email:</strong> <a href="mailto:info@rinatltd.example">info@rinatltd.example</a></p>
-          <p><strong>Area:</strong> Your Town, UK</p>
-          <p class="mt"><a class="btn block" href="mailto:info@rinatltd.example">Email me</a></p>
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div class="md:col-span-2">
+        <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight">Reliable electrician. Practical energy savings. Local & insured.</h1>
+        <p class="mt-4 text-slate-600 max-w-prose">Hi — I’m Rinat. I install, repair and make homes safer and more energy-efficient. Clean installs, clear pricing, and a focus on safety and workmanship. Available for domestic and small commercial work.</p>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="tel:+447123456789" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-gradient-to-r from-orange-400 to-yellow-300 text-white font-semibold shadow">Call +44 7123 456789</a>
+          <a href="mailto:info@rinatltd.example" class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-slate-200 text-slate-700">Email info@rinatltd.example</a>
         </div>
-        <div class="card small">
-          <h4>Fast response</h4>
-          <p class="muted">Emergency repairs and same-week appointments where possible.</p>
+
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="p-4 bg-white rounded-lg shadow">
+            <div class="text-sm text-slate-500">Qualifications</div>
+            <div class="mt-2 font-medium">City & Guilds / NVQ</div>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow">
+            <div class="text-sm text-slate-500">Insurance</div>
+            <div class="mt-2 font-medium">Public liability £2,000,000</div>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow">
+            <div class="text-sm text-slate-500">Experience</div>
+            <div class="mt-2 font-medium">10+ years</div>
+          </div>
+        </div>
+      </div>
+
+      <aside id="contact" class="order-first md:order-last">
+        <div class="sticky top-6 bg-white p-6 rounded-2xl shadow">
+          <h3 class="text-lg font-semibold">Get in touch</h3>
+          <p class="mt-2 text-sm text-slate-500">Replace these placeholder details in index.html before publishing publicly.</p>
+          <dl class="mt-4 text-sm text-slate-700">
+            <div class="flex items-center justify-between py-1"><dt class="font-medium">Phone</dt><dd><a href="tel:+447123456789" class="text-orange-500">+44 7123 456789</a></dd></div>
+            <div class="flex items-center justify-between py-1"><dt class="font-medium">Email</dt><dd><a href="mailto:info@rinatltd.example" class="text-slate-700">info@rinatltd.example</a></dd></div>
+            <div class="flex items-center justify-between py-1"><dt class="font-medium">Area</dt><dd class="text-slate-600">Your Town, UK</dd></div>
+          </dl>
+          <div class="mt-4">
+            <a class="block text-center px-4 py-2 rounded-lg bg-orange-400 text-white font-semibold" href="mailto:info@rinatltd.example">Email me</a>
+          </div>
         </div>
       </aside>
     </section>
 
-    <section id="services" class="services">
-      <h2>Services</h2>
-      <div class="grid services-grid">
-        <article class="service">
-          <div class="icon">⚡</div>
-          <h3>Installations</h3>
-          <p>Lighting, sockets, showers and tidy domestic installs with testing and certification.</p>
-        </article>
-        <article class="service">
-          <div class="icon">🛡️</div>
-          <h3>Safety & Fuseboards</h3>
-          <p>Fuseboard upgrades, RCDs, earthing and Part P compliance guidance.</p>
-        </article>
-        <article class="service">
-          <div class="icon">🔧</div>
-          <h3>Repairs & Fault Finding</h3>
-          <p>Fast diagnosis and repairs to get you safe — including emergency call-outs.</p>
-        </article>
-        <article class="service">
-          <div class="icon">💡</div>
-          <h3>Energy Smart</h3>
-          <p>LED upgrades, smart lighting installs and energy-saving advice.</p>
-        </article>
+    <section id="services" class="mt-12">
+      <h2 class="text-2xl font-semibold">Services</h2>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow">
+          <div class="text-3xl">⚡</div>
+          <h3 class="mt-3 font-medium">Installations</h3>
+          <p class="mt-2 text-sm text-slate-600">Lighting, sockets, showers and tidy domestic installs with testing and certification.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <div class="text-3xl">🛡️</div>
+          <h3 class="mt-3 font-medium">Safety & Fuseboards</h3>
+          <p class="mt-2 text-sm text-slate-600">Fuseboard upgrades, RCDs, earthing and Part P compliance guidance.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <div class="text-3xl">🔧</div>
+          <h3 class="mt-3 font-medium">Repairs</h3>
+          <p class="mt-2 text-sm text-slate-600">Fault-finding, emergency repair and fast call-outs to get you safe.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <div class="text-3xl">💡</div>
+          <h3 class="mt-3 font-medium">Energy Smart</h3>
+          <p class="mt-2 text-sm text-slate-600">LED upgrades, smart lighting and energy-saving advice to reduce bills.</p>
+        </div>
       </div>
     </section>
 
-    <section class="trust">
-      <h2>Trusted by neighbours</h2>
-      <div class="grid trust-grid">
-        <blockquote class="testimonial">“Tidy, professional and reasonably priced. Would recommend.” <cite>— A Customer</cite></blockquote>
-        <blockquote class="testimonial">“Came same week and fixed the problem quickly.” <cite>— B Homeowner</cite></blockquote>
-        <div class="credentials card">
-          <h4>Credentials</h4>
-          <ul>
+    <section class="mt-12 mb-8">
+      <h2 class="text-2xl font-semibold">Trusted by neighbours</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <blockquote class="p-6 bg-white rounded-xl shadow">“Quick, tidy and fixed the wiring fault in no time. Highly recommended.” <cite class="block mt-3 text-sm text-slate-500">— A. Customer</cite></blockquote>
+        <blockquote class="p-6 bg-white rounded-xl shadow">“Professional, turned up on time and left the place spotless.” <cite class="block mt-3 text-sm text-slate-500">— B. Homeowner</cite></blockquote>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <h3 class="font-medium">Credentials</h3>
+          <ul class="mt-3 text-sm text-slate-600 list-disc list-inside">
             <li>City & Guilds / NVQ — Electrical (placeholder)</li>
             <li>Part P registered</li>
             <li>Public liability insurance £2,000,000</li>
@@ -100,13 +118,12 @@
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
+  <footer class="border-t border-slate-100 bg-white/40">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-sm text-slate-600">
       <div>© 2025 Rinat Ltd — Rinat, Electrician</div>
-      <div class="small muted">Replace placeholder contacts in index.html before sharing publicly.</div>
+      <div>Replace placeholders in index.html before sharing publicly.</div>
     </div>
   </footer>
 </body>
