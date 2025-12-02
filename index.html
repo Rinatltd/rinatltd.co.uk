@@ -1,25 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Rinat Ltd — Electrician & Home Energy Magician</title>
-  <link rel="stylesheet" href="/assets/styles.css" />
-  <meta name="description" content="Rinat Ltd — Professional electrician (Rinat). Installations, repairs, safety checks and energy-smart solutions. Placeholder contact details." />
+  <link rel="stylesheet" href="/assets/styles.css">
+  <meta name="description" content="Rinat Ltd — Professional electrician. Installations, repairs, safety checks and energy-smart solutions.">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
+  <header class="header">
+    <div class="wrap">
       <a class="brand" href="/">
-        <!-- Simple spark + bolt logo -->
-        <svg class="logo" viewBox="0 0 64 64" width="48" height="48" aria-hidden="true" focusable="false">
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
           <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#FFD166"/><stop offset="1" stop-color="#FF7A59"/></linearGradient></defs>
-          <circle cx="32" cy="32" r="30" fill="#0f1724" opacity="0.06"/>
+          <circle cx="32" cy="32" r="30" fill="url(#bg)" opacity="0.06"/>
           <path d="M34 10c0 0-3 6 4 8-9 2-10 9-10 16l-6-1 8 22 0-14c2 2 6 3 10 2-2 6 4-10 4-10s6-12-4-19c-3-2-6-2-6-2z" fill="url(#g)"/>
         </svg>
         <div class="brand-text">
-          <strong>Rinat Ltd</strong>
-          <small>Electrician & Home Energy Magician</small>
+          <span class="company">Rinat Ltd</span>
+          <span class="tag">Electrician & Home Energy Magician</span>
         </div>
       </a>
       <nav class="nav">
@@ -29,96 +28,86 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="wrap main">
     <section class="hero">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <h1>Hi, I’m Rinat — I make homes safe, bright and energy-smart</h1>
-          <p class="lead">Qualified electrician with a knack for tidy installs and practical energy-saving tricks. I do installations, repairs, fuseboard upgrades and urgent call-outs. Think of me as your local electrical magician — reliable, safe and insured.</p>
-          <p class="hero-ctas">
-            <a class="button" href="tel:+447123456789">Call +44 7123 456789</a>
-            <a class="button outline" href="mailto:info@rinatltd.example">Email info@rinatltd.example</a>
-          </p>
-          <ul class="badges">
-            <li>✔️ Part P registered (placeholder)</li>
-            <li>✔️ Public liability insured</li>
-            <li>✔️ 10+ years experience</li>
-          </ul>
-        </div>
-
-        <aside class="hero-card" aria-labelledby="contact">
-          <h3 id="contact">Get in touch</h3>
-          <p class="muted">Placeholder details — replace with your real contact info in index.html</p>
-          <address>
-            <p><strong>Phone:</strong> <a href="tel:+447123456789">+44 7123 456789</a></p>
-            <p><strong>Email:</strong> <a href="mailto:info@rinatltd.example">info@rinatltd.example</a></p>
-            <p><strong>Area:</strong> Your Town, UK</p>
-          </address>
-          <p>
-            <a class="button full" href="mailto:info@rinatltd.example">Email me</a>
-            <a class="button full outline" href="tel:+447123456789">Call me</a>
-          </p>
-        </aside>
+      <div class="hero-left">
+        <h1>Reliable electrician. Practical energy savings. Local & insured.</h1>
+        <p class="lead">Hi — I’m Rinat. I install, repair and make homes safer and more energy-efficient. Clean installs, clear pricing, and a focus on safety and workmanship.</p>
+        <p class="actions">
+          <a class="btn primary" href="tel:+447123456789">Call +44 7123 456789</a>
+          <a class="btn" href="mailto:info@rinatltd.example">Email info@rinatltd.example</a>
+        </p>
+        <ul class="quick">
+          <li>Part P registered (placeholder)</li>
+          <li>Public liability insured</li>
+          <li>10+ years experience</li>
+        </ul>
       </div>
+      <aside class="hero-right" id="contact">
+        <div class="card contact">
+          <h3>Get in touch</h3>
+          <p class="muted">Replace these placeholders with your real contact details in index.html</p>
+          <p><strong>Phone:</strong> <a href="tel:+447123456789">+44 7123 456789</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@rinatltd.example">info@rinatltd.example</a></p>
+          <p><strong>Area:</strong> Your Town, UK</p>
+          <p class="mt"><a class="btn block" href="mailto:info@rinatltd.example">Email me</a></p>
+        </div>
+        <div class="card small">
+          <h4>Fast response</h4>
+          <p class="muted">Emergency repairs and same-week appointments where possible.</p>
+        </div>
+      </aside>
     </section>
 
     <section id="services" class="services">
-      <h2>Services I offer</h2>
-      <div class="cards">
-        <article class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M13 2L3 14h7v8l10-12h-7z"/></svg>
+      <h2>Services</h2>
+      <div class="grid services-grid">
+        <article class="service">
+          <div class="icon">⚡</div>
           <h3>Installations</h3>
-          <p>Lighting, sockets, showers and home electrics with tidy finishes and safety checks.</p>
+          <p>Lighting, sockets, showers and tidy domestic installs with testing and certification.</p>
         </article>
-
-        <article class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zM11 7h2v6h-2zM11 15h2v2h-2z"/></svg>
-          <h3>Fuseboard & Safety</h3>
-          <p>Fuseboard upgrades, RCD installation, earthing checks and Part P compliance advice.</p>
+        <article class="service">
+          <div class="icon">🛡️</div>
+          <h3>Safety & Fuseboards</h3>
+          <p>Fuseboard upgrades, RCDs, earthing and Part P compliance guidance.</p>
         </article>
-
-        <article class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M6 2l1 7h10l1-7H6zm0 9v11h12V11H6z"/></svg>
-          <h3>Repairs & Emergency</h3>
-          <p>Fault-finding, emergency call-outs and fast repairs to get you safe again.</p>
+        <article class="service">
+          <div class="icon">🔧</div>
+          <h3>Repairs & Fault Finding</h3>
+          <p>Fast diagnosis and repairs to get you safe — including emergency call-outs.</p>
         </article>
-
-        <article class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M7 3h10v2H7zM4 7h16v2H4zM9 11h6v8H9z"/></svg>
-          <h3>Energy-Smart</h3>
-          <p>LED upgrades, smart lighting, and energy-saving advice to reduce bills.</p>
+        <article class="service">
+          <div class="icon">💡</div>
+          <h3>Energy Smart</h3>
+          <p>LED upgrades, smart lighting installs and energy-saving advice.</p>
         </article>
       </div>
     </section>
 
     <section class="trust">
-      <h2>Trusted & local</h2>
-      <div class="trust-grid">
-        <div class="testimonial">
-          <p class="quote">"Quick, tidy and fixed the wiring fault in no time. Highly recommended."</p>
-          <p class="author">— A. Customer</p>
-        </div>
-        <div class="testimonial">
-          <p class="quote">"Professional, turned up on time and left the place spotless."</p>
-          <p class="author">— B. Homeowner</p>
-        </div>
-        <div class="credentials">
-          <p><strong>Credentials (placeholders):</strong></p>
+      <h2>Trusted by neighbours</h2>
+      <div class="grid trust-grid">
+        <blockquote class="testimonial">“Tidy, professional and reasonably priced. Would recommend.” <cite>— A Customer</cite></blockquote>
+        <blockquote class="testimonial">“Came same week and fixed the problem quickly.” <cite>— B Homeowner</cite></blockquote>
+        <div class="credentials card">
+          <h4>Credentials</h4>
           <ul>
-            <li>City & Guilds / NVQ — Electrical</li>
+            <li>City & Guilds / NVQ — Electrical (placeholder)</li>
             <li>Part P registered</li>
-            <li>Public liability insurance: £2,000,000</li>
+            <li>Public liability insurance £2,000,000</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 2025 Rinat Ltd — Rinat, Electrician. Placeholder contact details currently shown.</p>
-        <p class="muted">Replace placeholder phone, email and address in index.html before publishing live.</p>
-      </div>
-    </footer>
   </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>© 2025 Rinat Ltd — Rinat, Electrician</div>
+      <div class="small muted">Replace placeholder contacts in index.html before sharing publicly.</div>
+    </div>
+  </footer>
 </body>
 </html>
